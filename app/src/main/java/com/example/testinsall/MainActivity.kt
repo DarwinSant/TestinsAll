@@ -2,6 +2,7 @@ package com.example.testinsall
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -10,7 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var nissan = Autos("nissan","rojo")
-        Texto.setText("${nissan.color}")
+        aplicar.setOnClickListener {
+
+            val modeloEscrito = modeloText.text.toString()
+            val colorEscrito = colorText.text.toString()
+
+            var nissan = Autos("$modeloEscrito","$colorEscrito")
+            Texto.setText("${nissan.color}")
+        }
+
+
     }
 }
