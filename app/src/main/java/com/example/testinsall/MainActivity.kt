@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
             val modeloEscrito = modeloText.text.toString()
             val colorEscrito = colorText.text.toString()
 
-            var nissan = Autos("$modeloEscrito","$colorEscrito")
-            Texto.setText("${nissan.color}")
+            var nissan = AutoDeportivos("blabalabla","$modeloEscrito","$colorEscrito")
+            Texto.setText("${nissan.modelos} y ${nissan.desig } ${nissan.color}")
         }
 
 
