@@ -40,4 +40,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/aplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicar"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="458dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
